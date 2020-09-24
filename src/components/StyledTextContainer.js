@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledTextContainer = styled.div`
-margin: 5% auto;
+margin: 1rem auto;
 padding: 3rem;
 width: 75%;
 text-transform: capitalize;

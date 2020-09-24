@@ -4,5 +4,9 @@
   --lightText: #ecfffe;
 }
 body{
-  background-image: url("./double-bubble/double-bubble.png") !important;
+  background-image: url("./background-images/double-bubble.png") !important;
+}
+.HomeImages{
+  width: 30rem;
+
 }

@@ -19,7 +19,7 @@ export default class Footer extends Component {
 }
 
 const FooterWrapper = styled.div`
-    position: absolute;
+    margin-top: 5vh;
     width: 100%;
     bottom: 0;
     font-size: 1rem;
