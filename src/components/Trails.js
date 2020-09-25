@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {StyledTextContainer} from './StyledTextContainer';
-import PropTypes from 'prop-types'
 import {localTrails} from '../trailData';
 
 class TrailList extends Component {
@@ -18,10 +17,10 @@ class TrailList extends Component {
                     {localTrails.map((trail)=>{
                         return (<StyledTextContainer>
                             <h1>{trail.title}</h1>
-                            <img className="HomeImages" src={trail.img}/>
+                            <img className="HomeImages" alt="trail" src={trail.img}/>
                             <h5>{trail.type}</h5>
                             <p>{trail.info}</p>
-                            <a href={trail.link} class="icon-link nav-link" target="_blank">{trail.title} Website</a>
+                            <a href={trail.link} class="icon-link nav-link" rel="noopener noreferrer"  target="_blank">{trail.title} Website</a>
                         </StyledTextContainer>)
                 })}
                 </div>

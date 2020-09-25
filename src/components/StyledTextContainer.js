@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledTextContainer = styled.div`
+text-align: center;
 margin: 1rem auto;
 padding: 3rem;
 width: 75%;
