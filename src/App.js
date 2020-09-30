@@ -9,7 +9,7 @@ import Trails from './components/Trails';
 import News from './components/News';
 import Default from './components/Default'
 import Footer from './components/Footer'
-
+import Weather from './components/Weather'
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/contact" component={Contact}></Route>
         <Route path="/news" component={News}></Route>
         <Route path="/wheretoride" component={Trails}></Route>
+        <Route path="/data" component={Weather}></Route>
         <Route component={Default}></Route>
       </Switch>
       

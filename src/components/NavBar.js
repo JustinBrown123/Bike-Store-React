@@ -8,7 +8,7 @@ export default class NavBar extends Component {
     render() {
         return (
             
-            <NavWrapper className ="navbar navbar-dark navbar-expand-sm px-sm-5">
+            <NavWrapper className ="navbar navbar-dark  navbar-expand-sm px-sm-5">
                 <Link to ='/'><img src="../images/Bike-logo.png" alt="Home" className="navbar-img"/></Link>
                 <div className="nav-items">
                     <ul className="navbar-nav align-items-center">
@@ -34,20 +34,20 @@ export default class NavBar extends Component {
 const NavWrapper= styled.nav`
 
     background: var(--darkColor);
-    height: 4rem;
+    height: calc(50px + 1vw);
     .navbar-img{
         position: absolute;
         left: 1rem;
         top: 0;
-        width: 9.5rem;
+        width: calc(90px + 5vw);
     }
     .nav-items{
         position:absolute;
-        left: 12rem;
+        left: calc(100px + 5vw);
     }
     .nav-link{
         color: var(--lightColor);
-        font-size: 1.3rem;
+        font-size: calc(15px + .5vw);
         text-transform: capitalize;
     }
     .nav-link:hover{

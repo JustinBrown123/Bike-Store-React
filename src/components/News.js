@@ -6,9 +6,11 @@ import {StyledTextContainer} from './StyledTextContainer'
 
  class News extends Component {
     render() {
+        console.log("hello from news")
         return (
+           
             <React.Fragment>
-             
+              
             <StyledTextContainer className="w-50 mt-5">
 
             <h3 className="mb-5">Keep up with us on facebook</h3>
