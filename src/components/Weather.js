@@ -14,7 +14,7 @@ export default class Weather extends Component {
     
 
     componentDidMount() {
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=youngstown,ohio&units=imperial&appid='+ process.env.REACT_APP_WEATHER_ID)
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=youngstown,ohio&units=imperial&appid='+ process.env.REACT_APP_WEATHER_ID)
         // fetch('https://jsonplaceholder.typicode.com/users')
         .then(res => res.json())
         .then( json => {
