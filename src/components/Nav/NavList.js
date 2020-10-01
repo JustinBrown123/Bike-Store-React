@@ -9,7 +9,8 @@ z-index: 10;
 list-style:none;
 display: flex;
 flex-flow: row nowrap;
-background-color: pink;
+background-color: var(--darkColor);
+justify-content:center;
 
 
 li{
@@ -35,18 +36,62 @@ li{
     display:none;
 }
 
+ .nav-link:hover{
+    color: var(--lightColor);
+ }
+
+
+
+@media (max-width: 768px){
+    
+    flex-flow: column  nowrap;
+    background-color: #267272;
+    position: fixed;
+    transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
+    top: 0;
+    right: 0;
+    height: 70vh;
+    width: calc(150px + 20vw);
+    padding-top:3.5rem;
+    transition:transform 0.3s ease-in-out;
+    justify-content: unset;
+    align-items: center;
+    border-radius: 20% 0 0 60%;
+    
+    li{
+        color: var(--lightText);
+    }
+    .breaker-line{
+    width: 85%;
+    padding: 1px;
+    margin: 2vh 0;
+    background-color: var(--lightText);
+    display: unset;
+    }
+    .nav-title{
+    margin-top: 3vh;
+    font-size: calc(1vw + 10px);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 3px 0;
+    display: unset;
+}
+
 .nav-link::before,
 .nav-link::after{
   content: "";
-  height: 2px;
+  height: 1.5px;
   width: 100%;
   
-  background-color: chocolate;
+  background-color: var(--lightColor);
   position: absolute;
   left: 0;
   transform: scaleX(0);
   transition: transform 0.5s;
 }
+
 .nav-link::after{
     bottom: -2px;
     transform-origin: right;
@@ -61,43 +106,6 @@ li{
     transform: scaleX(1);
 }
 
-@media (max-width: 768px){
-    
-    flex-flow: column  nowrap;
-    background-color: blue;
-    position: fixed;
-    transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 0;
-    right: 0;
-    height: 70vh;
-    width: calc(150px + 20vw);
-    padding-top:3.5rem;
-    transition:transform 0.3s ease-in-out;
- 
-    align-items: center;
-    border-radius: 20% 0 0 60%;
-    li{
-        color: white;
-    }
-    .breaker-line{
-    width: 85%;
-    padding: 1px;
-    margin: 2vh 0;
-    background-color: grey;
-    display: unset;
-    }
-    .nav-title{
-    margin-top: 3vh;
-    font-size: calc(1vw + 10px);
-    color: white;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    position: relative;
-    padding: 3px 0;
-    display: unset;
-
-}
 
 }
 `

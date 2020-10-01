@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Logo = styled.div`
     z-index: 5;
     position: fixed;
-    top: 100px;
+    top: 0;
     left: 0;
 
     img{
@@ -13,9 +13,7 @@ const Logo = styled.div`
         width: 20vw;
         max-width: 200px;
     }
-    @media (max-width: 768px){
-        top: 0;
-    }
+
 
 `
 
