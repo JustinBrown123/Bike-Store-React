@@ -26,9 +26,10 @@ li{
     letter-spacing: 1px;
     text-transform: uppercase;
     position: relative;
-    padding: 3px 0;
+    padding: 3px 1vw;
     margin: 2px;
 }
+
 .nav-title{
   display: none;
 }
@@ -38,6 +39,10 @@ li{
 
  .nav-link:hover{
     color: var(--lightColor);
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transform: scale(1.25);
+    
  }
 
 
@@ -84,6 +89,7 @@ li{
   content: "";
   height: 1.5px;
   width: 100%;
+  padding: 0;
   
   background-color: var(--lightColor);
   position: absolute;
@@ -104,7 +110,15 @@ li{
 .nav-link:hover::before,
 .nav-link:hover::after{
     transform: scaleX(1);
+   
 }
+.nav-link:hover{
+    color: var(--lightColor);
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0);
+    transform: scale(1);
+    
+ }
+
 
 
 }
