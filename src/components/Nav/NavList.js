@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 
 
 
+
 const Nav = styled.ul `
 z-index: 10;
 list-style:none;
@@ -50,7 +51,10 @@ li{
 @media (max-width: 768px){
     
     flex-flow: column  nowrap;
-    background-color: #267272;
+    background-color: #267272; 
+    background-image: url("./binding_dark/binding_dark.png");
+
+
     position: fixed;
     transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;

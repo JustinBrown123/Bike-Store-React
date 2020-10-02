@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 
-const Logo = styled.div`
+const ColorLogo = styled.div`
     z-index: 5;
     position: fixed;
     top: 0;
@@ -19,9 +19,9 @@ const Logo = styled.div`
 
 const MainLogo = ()=> {
     return (
-        <Logo>
+        <ColorLogo>
             <Link to ='/'><img src="../images/Bike-logo.png" alt="Home" className="navbar-img"/></Link>
-        </Logo>
+        </ColorLogo>
     )
 }
 

@@ -17,10 +17,10 @@ export default class Home extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col p-2 text-center m-auto">
+                    <div className="col p-2 text-center m-auto main-pic">
                         <img src="../images/CyclingCuyahoga.jpg" alt=''className="HomeImages" />
                     </div>
-                    <div className="col p-2 text-center m-auto">
+                    <div className="col p-2 text-center m-auto main-pic">
                         <img src="../images/kidsCycling.jpg" alt=""className="HomeImages"/>
                     </div>
                     
