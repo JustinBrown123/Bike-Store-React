@@ -5,6 +5,15 @@ import BurgerMenu from './BurgerMenu';
 
 
 const NavWrapper= styled.nav`
+z-index: 7;
+@media (max-width: 768px){
+    height: 60px;
+    width: 100%;
+    background: var(--darkColor);
+    position: fixed;
+    
+
+}
 
 `
 

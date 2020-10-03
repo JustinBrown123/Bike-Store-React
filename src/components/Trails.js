@@ -9,9 +9,9 @@ class TrailList extends Component {
             
             <React.Fragment>
                 <div className="text-center p-4">
-                <StyledTextContainer className="bg-info">
-                    <Weather/>
-                </StyledTextContainer>
+                
+                <Weather/>
+                
                 Maybe a club or something about downloading youngstowns favorite routes
                 <h4>GPX downloads/Strava etc</h4>
                 </div>

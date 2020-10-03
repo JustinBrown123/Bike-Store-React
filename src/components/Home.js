@@ -40,7 +40,8 @@ const HomeLogo = styled.div`
     text-align: center;
     padding-top: 2rem;
     .logo{
-        height: 12rem;
+        width: 10vw;
+       
     }
     
 

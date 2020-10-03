@@ -28,3 +28,6 @@ body{
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+.main-body{
+  padding-top: 75px;
+}

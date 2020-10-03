@@ -15,7 +15,7 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
-      
+      <div className="main-body">
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route path="/contact" component={Contact}></Route>
@@ -24,7 +24,7 @@ function App() {
         <Route path="/data" component={Weather}></Route>
         <Route component={Default}></Route>
       </Switch>
-      
+      </div>
       <Footer/>
     </React.Fragment>
 

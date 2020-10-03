@@ -1,4 +1,39 @@
 import React, { Component } from 'react'
+import styled from "styled-components"
+
+const StyledWeather = styled.div`
+    font-size: calc(.5vw + 5px);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 4vw;
+
+    .temperature{
+        background: var(--lightColor);
+        border-radius: 50px;
+    }
+    .riding-condition{
+    margin: auto;
+    word-wrap: break-word;
+}
+@media(max-width: 768px){
+    width: 95%;
+    
+    .temperature{   
+
+
+    }
+    .weather-icon{
+        width: 50px;
+    }
+    .riding-condition{
+        
+    
+    }
+}
+
+    
+
+`
 
 export default class Weather extends Component {
     constructor(props){
@@ -45,9 +80,10 @@ export default class Weather extends Component {
         if ( temp > 65 && weatherConditions.includes("sun")){
             timeToBike = <div>Its Beautiful You should Bike</div>
         }else if (badWeather === true || temp < 35){
-            timeToBike = <h4>We Have all your indoor needs, <br/> checkout out trainer selection</h4>
+            timeToBike =  "We Have all your indoor needs, checkout out trainer selection"
         }else if (badWeather === false && temp > 45){
-            timeToBike = <div>Go for a brisk ride today</div>
+            timeToBike =  <div><div className="article-title">Go for a Cool brisk ride today</div>
+                            <div className='article-text'>we have all the cool weather gear</div></div>
         }
 
         if(error){
@@ -56,14 +92,17 @@ export default class Weather extends Component {
             return<div>Loading....</div>
         } else{
         return(
-            <div className='text-center'>
-                
-                <div className="text-capitalize">It is {temp}℉ with {weather} conditions</div>
-                    <div><img src= {weatherImage} alt="icon"/></div>
-               
-              
-               {timeToBike}
-            </div>
+            <StyledWeather>
+                <div className='text-center row'> 
+                    <div className="riding-condition col">{timeToBike}</div>
+                    <div className="col-4">
+                        <div className="temperature">
+                            <div className=" article-text text-capitalize pt-3">It is {temp}℉ <br/> Currently:{weather}</div>
+                                <div><img className="weather-icon" src= {weatherImage} alt="icon"/></div> 
+                        </div>
+                    </div>
+                </div>
+            </StyledWeather>
         );
     }
 }
