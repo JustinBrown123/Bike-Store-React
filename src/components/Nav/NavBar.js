@@ -1,7 +1,11 @@
-import React from 'react';
-
+import React, {useState} from 'react';
+import MainLogo from './MainLogo'
 import styled from 'styled-components';
-import BurgerMenu from './BurgerMenu';
+import {StyledBurger} from './BurgerMenu';
+import {Link} from 'react-router-dom'
+import {NavList} from './NavList'
+import {NavCss} from './NavCss'
+
 
 
 const NavWrapper= styled.nav`
@@ -11,44 +15,38 @@ z-index: 7;
     width: 100%;
     background: var(--darkColor);
     position: fixed;
-    
-
 }
-
 `
 
-
-
 export const Navbar = () => {
+    const [open, setOpen] = useState(false)
+    const showNavbar = () => setOpen(!open)
 
 
         return (
-            
+            <>
+            <MainLogo/>
+            <div>       
+                <StyledBurger open={open} onClick={showNavbar}>
+                    <div className="line line-1"></div>
+                    <div className="line line-2"></div>
+                    <div className="line line-3"></div>
+                </StyledBurger>
+                </div>
             <NavWrapper>
-                
-                <BurgerMenu/>
+                <NavCss open={open} onClick={showNavbar}>
+                <li className="nav-title text-title">Pedal Works</li>
+                <li className="breaker-line"></li>        
+                    {NavList.map((item, index) => {
+                        return(
+                            <li key={index} className="nav-item text-title">
+                                <Link to={item.path} className={item.cName}>{item.title}</Link>
+                            </li>
+                        )
+                    })}
+                </NavCss>
             </NavWrapper>
+            </>
+
         )
     }
-
-    // background: var(--darkColor);
-    // height: calc(50px + 1vw);
-    // .navbar-img{
-    //     position: absolute;
-    //     left: 1rem;
-    //     top: 0;
-    //     width: calc(90px + 5vw);
-    // }
-    // .nav-items{
-    //     position:absolute;
-    //     left: calc(100px + 5vw);
-    // }
-    // .nav-link{
-    //     color: var(--lightColor);
-    //     font-size: calc(15px + .5vw);
-    //     text-transform: capitalize;
-    // }
-    // .nav-link:hover{
-    //     transform: scale(1.25);
-    //     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
-    // }

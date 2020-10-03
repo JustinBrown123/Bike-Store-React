@@ -1,12 +1,8 @@
-import React, { useState } from 'react'
-
 import styled from 'styled-components'
-import MainLogo from './MainLogo'
-import NavList from './NavList'
 
 
 
-const StyledBurger = styled.div`
+export const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
     position: fixed;
@@ -14,15 +10,11 @@ const StyledBurger = styled.div`
     right: 20px;
     z-index: 20;
     display: none;
-    :hover{
-        cursor: pointer;
-    }
 
     @media (max-width: 768px){
         display: flex;
         justify-content: space-around;
-        flex-flow:  column nowrap;
-        top: 10px;
+    flex-flow:  column nowrap;
     }
 
     .line{
@@ -48,24 +40,3 @@ const StyledBurger = styled.div`
 
 
 `
-
-
-const BurgerMenu  = () => {
-    const [open, setOpen] = useState(false)
-        return (
-                <div>
-                <MainLogo/>
-                <StyledBurger open={open} onClick={() => setOpen(!open)}>
-                    <div className="line line-1"></div>
-                    <div className="line line-2"></div>
-                    <div className="line line-3"></div>
-                </StyledBurger>
-                <NavList open={open}/>
-                </div>
-            
-        )
-    }
-
-
-
-export default BurgerMenu
