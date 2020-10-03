@@ -13,22 +13,14 @@ const StyledWeather = styled.div`
     }
     .riding-condition{
     margin: auto;
-    word-wrap: break-word;
+
 }
 @media(max-width: 768px){
     width: 95%;
-    
-    .temperature{   
-
-
-    }
     .weather-icon{
         width: 50px;
     }
-    .riding-condition{
-        
-    
-    }
+
 }
 
     
@@ -78,12 +70,14 @@ export default class Weather extends Component {
         var badWeather = /rain|snow|shower|storm|thunder|blizzard/.test(weatherConditions)
 
         if ( temp > 65 && weatherConditions.includes("sun")){
-            timeToBike = <div>Its Beautiful You should Bike</div>
+            timeToBike = <div className="article-title">Its Beautiful You should Bike</div>
         }else if (badWeather === true || temp < 35){
             timeToBike =  "We Have all your indoor needs, checkout out trainer selection"
         }else if (badWeather === false && temp > 45){
             timeToBike =  <div><div className="article-title">Go for a Cool brisk ride today</div>
                             <div className='article-text'>we have all the cool weather gear</div></div>
+        }else {
+            timeToBike = <div>No matter The Weather We have your biking needs</div>
         }
 
         if(error){
