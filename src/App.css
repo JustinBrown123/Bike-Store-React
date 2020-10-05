@@ -34,12 +34,12 @@ body{
 }
 @media(max-width: 768px){
   .body-background{
-    background-image:url('./background-images/gravel.png');
+    background-image:url('./background-images/whitey.png');
     background-position: 0;
     background-repeat: repeat;
   }
   .background-overlay{
-    background-color: rgb(241, 230, 72 ,.3);
+    background-color: rgba(167, 239, 248, 0.05);
   }
 }
 .HomeImages{
