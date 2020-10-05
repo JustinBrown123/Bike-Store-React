@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import logo from '../logo.svg'
+
 
 export default class Footer extends Component {
     render() {
         return (
             <FooterWrapper>
                 <div className="d-flex justify-content-center text-center ">
-                    <img src={logo} className='logo' alt='logo'/>
+                    <img src="../images/Trailside_Logo_Background.png" className='logo' alt='logo'/>
                 </div>
                 <div className="d-flex justify-content-center text-center ">
-                    &copy; Bike &amp; Dog 2020
+                    &copy; Trailsid Bicycle Company
                 </div>
                 
             </FooterWrapper>

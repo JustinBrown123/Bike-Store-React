@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {StyledTextContainer} from './StyledTextContainer'
-import logo from '../logo.svg'
+
 
 
 export default class Contact extends Component {
@@ -10,7 +10,7 @@ export default class Contact extends Component {
             <div className="p-5">
                
             <StyledTextContainer className="w-50 text-center">
-                <div> <img src={logo} className='w-100 p-5' alt='logo'/> </div>
+            <img src="../images/Trailside_Logo_Background.png" alt="Home" className="navbar-img"/>
             <h4>Bikeshop Name</h4>
             <p><a href="tel:(330)-509-4362">(330) 509-4362</a></p>
             <h5> Columbus Ohio </h5>

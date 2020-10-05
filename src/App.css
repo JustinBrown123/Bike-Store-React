@@ -1,7 +1,7 @@
 :root{
-  --lightColor: #8cfffb;
-  --darkColor: #355c5a;
-  --lightText: #ecfffe;
+  --lightColor:  #7fb5ca;
+  --darkColor: #21576d;
+  --lightText: #99dbf5;
 }
 body{
   background-image: url("./background-images/double-bubble.png") !important;

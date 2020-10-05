@@ -11,9 +11,9 @@ import {NavCss} from './NavCss'
 const NavWrapper= styled.nav`
 z-index: 7;
 @media (max-width: 768px){
-    height: 60px;
+    height: 50px;
     width: 100%;
-    background: var(--darkColor);
+    background-color: var(--lightColor);
     position: fixed;
 }
 `
@@ -26,6 +26,7 @@ export const Navbar = () => {
         return (
             <>
             <MainLogo/>
+
             <div>       
                 <StyledBurger open={open} onClick={showNavbar}>
                     <div className="line line-1"></div>

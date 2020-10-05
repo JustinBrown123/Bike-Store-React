@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 
 const ColorLogo = styled.div`
-    z-index: 5;
+    z-index: 8;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,7 +19,8 @@ const ColorLogo = styled.div`
 
         .navbar-img{
             margin: auto;
-            width: 80px;
+         
+            width: 90px;
         }
 
 
@@ -31,7 +32,7 @@ const ColorLogo = styled.div`
 const MainLogo = ()=> {
     return (
         <ColorLogo>
-            <Link to ='/'><img src="../images/Bike-logo.png" alt="Home" className="navbar-img"/></Link>
+            <Link to ='/'><img src="../images/Trailside_Logo_Background.png" alt="Home" className="navbar-img"/></Link>
         </ColorLogo>
     )
 }

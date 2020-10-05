@@ -6,8 +6,10 @@ z-index: 10;
 list-style:none;
 display: flex;
 flex-flow: row nowrap;
+
 background-color: var(--darkColor);
 justify-content:center;
+
 
 li{
     padding: 10px;
@@ -33,7 +35,7 @@ li{
 }
 
  .nav-link:hover{
-    color: var(--lightColor);
+    color: var(--lightText);
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     transform: scale(1.25);
@@ -44,9 +46,10 @@ li{
 
 @media (max-width: 768px){
     
-    
+    background-image: url('../images/binding_dark/binding_dark.png');
+    border: double var(--lightColor);
     flex-flow: column  nowrap;
-    background-color: #267272; 
+    background-color: var(--darkColor); 
     position: fixed;
     transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
@@ -87,7 +90,7 @@ li{
   width: 100%;
   padding: 0;
   
-  background-color: var(--lightColor);
+  background-color: var(--lightText);
   position: absolute;
   left: 0;
   transform: scaleX(0);
@@ -109,7 +112,7 @@ li{
    
 }
 .nav-link:hover{
-    color: var(--lightColor);
+    color: var(--lightText);
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0);
     transform: scale(1);
     

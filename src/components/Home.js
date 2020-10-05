@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg'
 import {StyledTextContainer} from './StyledTextContainer';
 import styled from 'styled-components';
 
@@ -7,8 +6,9 @@ export default class Home extends Component {
     render() {
         return (
             <div>
+                
                 <HomeLogo>
-                    <img src={logo} className='logo' alt='logo'/>      
+                <img src="../images/Trailside_Logo_Background.png" className='logo' alt='logo'/>      
                 </HomeLogo>
                 <StyledTextContainer>
                 <div className="row">
