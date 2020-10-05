@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {StyledTextContainer} from './StyledTextContainer'
 import styled from 'styled-components'
 import background from '../background-images/Trailside_170.jpg'
 
@@ -25,6 +24,7 @@ const ContactImage = styled.div `
         width: 200px;
 
         height: 300px;
+        border-radius: 20px;
     }
     .contact-logo{
         width: 180px;
