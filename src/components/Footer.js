@@ -10,7 +10,7 @@ export default class Footer extends Component {
                     <img src="../images/Trailside_Logo_Background.png" className='logo' alt='logo'/>
                 </div>
                 <div className="d-flex justify-content-center text-center ">
-                    &copy; Trailsid Bicycle Company
+                    &copy; Trailside Bicycle Company
                 </div>
                 
             </FooterWrapper>
