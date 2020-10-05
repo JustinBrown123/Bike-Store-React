@@ -15,7 +15,12 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
+      <div className="background-spacing">
+
+      <div className="body-background">
+        <div className="background-overlay">
       <div className="main-body">
+        
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route path="/contact" component={Contact}></Route>
@@ -24,8 +29,12 @@ function App() {
         <Route path="/data" component={Weather}></Route>
         <Route component={Default}></Route>
       </Switch>
-      </div>
+
       <Footer/>
+      </div>
+      </div>
+      </div>
+      </div>
     </React.Fragment>
 
 

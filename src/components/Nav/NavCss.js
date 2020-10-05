@@ -2,13 +2,18 @@ import styled from 'styled-components'
 
 export const NavCss = styled.ul `
 
-z-index: 10;
+z-index: 6;
+height: calc(1vw + 50px);
 list-style:none;
 display: flex;
 flex-flow: row nowrap;
-
 background-image: url('../images/binding_dark/binding_dark.png');
 justify-content:center;
+margin-bottom: 0;
+position:fixed;
+width: 100%;
+top:0;
+
 
 
 li{

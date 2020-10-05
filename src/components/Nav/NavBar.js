@@ -18,7 +18,9 @@ const DisplayLogo= styled.div`
 `
 const NavWrapper= styled.nav`
 z-index: 6;
+
 @media (max-width: 768px){
+    top: 0;
     height: 50px;
     width: 100%;
     background-color: var(--lightColor);

@@ -1,30 +1,32 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-
+import {Link} from 'react-router-dom'
 
 export default class Footer extends Component {
     render() {
         return (
             <FooterWrapper>
                 <div className="d-flex justify-content-center text-center ">
-                    <img src="../images/Trailside_Logo_Background.png" className='logo' alt='logo'/>
+                    <Link to ='/contact'><img src="../images/Trailside_Logo_Background.png" className='logo' alt='logo'/></Link>
                 </div>
                 <div className="d-flex justify-content-center text-center ">
-                    &copy; Trailside Bicycle Company
-                </div>
-                
+                     Trailside Bicycle Company
+                </div> <div className="d-flex justify-content-center text-center ">
+                     Est. 2020
+                </div>    
             </FooterWrapper>
         )
     }
 }
 
 const FooterWrapper = styled.div`
+    color: white;
     margin-top: 5vh;
+    margin-bottom: 5px;
     width: 100%;
-    bottom: 0;
-    font-size: 1rem;
+    font-size: 10px;
     .logo{
-        width: 5rem;
+        width: 80px;
     }
 
 `

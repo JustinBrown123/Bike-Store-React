@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import background from '../background-images/Trailside_170.jpg'
-import WoodBackground from '../background-images/tileable_wood.png'
+import WoodBackground from '../background-images/SingleWoodPlank.png'
 
 const ContactImage = styled.div `
     
@@ -19,7 +19,7 @@ const ContactImage = styled.div `
     .content-background{
     background-image: url(${WoodBackground});
 
-    
+        background-size: cover;
         position: absolute;
         text-align: center;
         left: 58vw;
@@ -27,16 +27,15 @@ const ContactImage = styled.div `
        
         width: 260px;
         height: 300px;
-        box-shadow: 0 0 8px 8px rgba(0, 0, 0, .3) inset;
-        border: black 0.5px solid;
+
+        
 
     }
 
     .content{
         width: 100%;
         height: 100%;
-        
-        background-color: rgba(0,0,0,0.15);
+
         padding: 15px;
 
     }
@@ -92,7 +91,7 @@ export default class Contact extends Component {
             <ContactImage  >
             
                
-            <div className="content-background" style={{backgroundColor:`var(--lightColor)`}}>
+            <div className="content-background" >
                 <div className="content">
             {/* <img src="../images/Trailside_Logo_Background.png" alt="Home" className="contact-logo"/> */}
                 <div className="content-title">Contact Us at:</div>

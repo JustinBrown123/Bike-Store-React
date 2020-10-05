@@ -4,7 +4,42 @@
   --lightText: #99dbf5;
 }
 body{
-  background-image: url("./background-images/double-bubble.png") !important;
+
+  width:100%;
+  
+
+
+
+}
+.background-spacing{
+  padding-top: 50px;
+
+}
+.body-background{
+  background-image:url('./background-images/Trailside_3.jpg');
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: 0 calc(1vw + 50px);;
+  width: 100%;
+  
+  background-size:cover;
+  
+}
+
+.background-overlay{
+  background-color: rgba(0,0,0, .7);
+  width: 100%;
+  height: 100%;
+}
+@media(max-width: 768px){
+  .body-background{
+    background-image:url('./background-images/gravel.png');
+    background-position: 0;
+    background-repeat: repeat;
+  }
+  .background-overlay{
+    background-color: rgba(241, 230, 72, 0.1);
+  }
 }
 .HomeImages{
   width:  30vw;
@@ -30,4 +65,5 @@ body{
 }
 .main-body{
   padding-top: 50px;
+
 }
