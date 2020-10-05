@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 
 const ColorLogo = styled.div`
-    z-index: 8;
+    z-index: 7;
     position: fixed;
     top: 0;
     left: 0;
@@ -21,6 +21,7 @@ const ColorLogo = styled.div`
             margin: auto;
          
             width: 90px;
+           
         }
 
 

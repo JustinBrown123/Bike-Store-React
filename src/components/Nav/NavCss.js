@@ -7,7 +7,7 @@ list-style:none;
 display: flex;
 flex-flow: row nowrap;
 
-background-color: var(--darkColor);
+background-image: url('../images/binding_dark/binding_dark.png');
 justify-content:center;
 
 
@@ -18,7 +18,7 @@ li{
 .nav-link{
     text-decoration:none;
     font-size: calc(1vw + 8px);
-    color: white;
+    color: var(--lightText);
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -55,8 +55,8 @@ li{
     top: 0;
     right: 0;
     height: 70vh;
-    width: calc(150px + 20vw);
-    padding-top:3.5rem;
+    width: calc(130px + 20vw);
+    padding-top:2.5rem;
     transition:transform 0.3s ease-in-out;
     justify-content: unset;
     align-items: center;
@@ -73,13 +73,10 @@ li{
     display: unset;
     }
     .nav-title{
-    margin-top: 3vh;
-    font-size: calc(1vw + 10px);
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    width: 120px;
+
     position: relative;
-    padding: 3px 0;
+    
     display: unset;
 }
 

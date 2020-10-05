@@ -7,9 +7,17 @@ import {NavList} from './NavList'
 import {NavCss} from './NavCss'
 
 
+const DisplayLogo= styled.div`
+    @media(max-width: 768px){
+        
+        /* transition: transform 0.3s ease-in-out; */
+        opacity:  ${({open}) => open ? '0' : '1'};
+        transition: opacity .15s ease-in-out;
+    }
 
+`
 const NavWrapper= styled.nav`
-z-index: 7;
+z-index: 6;
 @media (max-width: 768px){
     height: 50px;
     width: 100%;
@@ -25,7 +33,10 @@ export const Navbar = () => {
 
         return (
             <>
-            <MainLogo/>
+            <DisplayLogo open={open}>
+                <MainLogo/>
+            </DisplayLogo>
+            
 
             <div>       
                 <StyledBurger open={open} onClick={showNavbar}>
@@ -36,7 +47,8 @@ export const Navbar = () => {
                 </div>
             <NavWrapper>
                 <NavCss open={open} onClick={showNavbar}>
-                <li className="nav-title text-title">Pedal Works</li>
+
+                <li><img src="../images/Trailside_Logo_Background.png" alt="Home" className="nav-title"/></li>
                 <li className="breaker-line"></li>        
                     {NavList.map((item, index) => {
                         return(
