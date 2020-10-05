@@ -16,10 +16,11 @@ body{
 
 }
 .body-background{
-  background-image:url('./background-images/Trailside_3.jpg');
+  background-image:url('./background-images/Trailside_2.jpg');
   background-repeat:no-repeat;
   background-attachment: fixed;
-  background-position: 0 calc(1vw + 50px);;
+  background-position: 0 -50px;
+  /* background-position: 0 calc(1vw + 50px);; */
   width: 100%;
   
   background-size:cover;
@@ -27,7 +28,7 @@ body{
 }
 
 .background-overlay{
-  background-color: rgba(0,0,0, .7);
+  background-color: rgba(0,0,0,.7);
   width: 100%;
   height: 100%;
 }
@@ -38,7 +39,7 @@ body{
     background-repeat: repeat;
   }
   .background-overlay{
-    background-color: rgba(241, 230, 72, 0.1);
+    background-color: rgb(241, 230, 72 ,.3);
   }
 }
 .HomeImages{

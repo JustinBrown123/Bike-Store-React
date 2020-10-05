@@ -7,7 +7,8 @@ height: calc(1vw + 50px);
 list-style:none;
 display: flex;
 flex-flow: row nowrap;
-background-image: url('../images/binding_dark/binding_dark.png');
+/* background-color: var(--darkColor); */
+ background-image: url('../images/binding_dark/binding_dark.png'); 
 justify-content:center;
 margin-bottom: 0;
 position:fixed;

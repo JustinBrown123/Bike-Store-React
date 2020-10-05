@@ -35,7 +35,7 @@ const ColorLogo = styled.div`
 const MainLogo = ()=> {
     return (
         <ColorLogo>
-            <Link to ='/'><img src="../images/woodenLogo2.png" alt="Home" className="navbar-img"/></Link>
+            <Link to ='/'><img src="../images/Trailside_Logo_Background.png" alt="Home" className="navbar-img"/></Link>
         </ColorLogo>
     )
 }
