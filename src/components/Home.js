@@ -99,7 +99,7 @@ const HomeDiv = styled.div`
         }
     }
     @media(max-width: 560px){
-        width: 100%;
+        width: 98%;
         .facebook-content{
             margin: auto;
             width: 100%;
