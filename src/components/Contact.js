@@ -1,47 +1,23 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import background from '../background-images/Trailside_170.jpg'
-import WoodBackground from '../background-images/SingleWoodPlank.png'
 
-const ContactImage = styled.div `
+
+const ContactDiv = styled.div `
+
+    margin: 10vh auto auto auto;
     
-    background-image: url(${background});
-    background-repeat: no-repeat;
+    border-radius:10px;
+    text-align: center;
+    padding: 3vw;
 
-    background-position: center;
-    background-size: contain;
-    min-height: 600px;
-    width: 100%;
- 
-    
-    
-
-    .content-background{
-    background-image: url(${WoodBackground});
-
-        background-size: cover;
-        position: absolute;
-        text-align: center;
-        left: 58vw;
-        top: 27vh;
-       
-        width: 260px;
-        height: 300px;
-
-        
-
+    background-color: rgba(250,250,250, 0.7);
+    width: calc(6vw + 200px);
+    @media(max-width: 768px){
+        width: calc(4vw + 200px);
+        background-color: rgba(0,0,250, 0.2);
     }
 
-    .content{
-        width: 100%;
-        height: 100%;
 
-        padding: 15px;
-
-    }
-    .contact-logo{
-        width: 180px;
-    }
     .content-title{
         padding-top: 15px;
         font-family: 'Rock Salt', cursive;
@@ -53,7 +29,7 @@ const ContactImage = styled.div `
 
     }
     .content-text{
-
+        
         transition: all 0.2s ease;
     }
     .content-text:hover{
@@ -62,25 +38,9 @@ const ContactImage = styled.div `
         font-weight: 500;
         transform: scale(1.25);
         background-color: rgba(127, 181, 202, .5);
-        border-radius: 5px;
-        
+        border-radius: 5px;   
     }
-    @media( max-width: 768px){
-        background-image: none;
-        width: 100%;
-        
-        padding: 50px;
-        min-height:400px;
-        .content-background{
-        position: relative;
-        left: unset;
-        top: unset;
-        margin: auto;
 
-       
-            
-        }
-    }
 
 `
 
@@ -88,27 +48,24 @@ export default class Contact extends Component {
     render() {
         return (
             
-            <ContactImage  >
+            <ContactDiv>
             
-               
-            <div className="content-background" >
-                <div className="content">
-            {/* <img src="../images/Trailside_Logo_Background.png" alt="Home" className="contact-logo"/> */}
-                <div className="content-title">Contact Us at:</div>
+                    
+                
+                <h3 className="content-title">Contact us</h3>
+                <div className="content-title">phone</div>
                 <div className="content-text"><a className="content-link" href="tel:(330)-503-4690">(330) 503-4690</a></div>
-                <div className="content-title">Email: </div>
+                <div className="content-title">Email</div>
                 <div className="content-text"><a className="content-link" href="mailto: trailsidebicycle@gmail.com" >trailsidebicycle@gmail.com</a>
-                </div><div className="content-title"> Located At </div>
+                </div><div className="content-title"> Visit Us </div>
                 <div className="content-text"><a className="content-link" href="http://maps.google.com/?q= 6685 Kirk Rd, Canfield, OH 44406"target="_blank" rel="noopener noreferrer" >6685 Kirk Rd, Canfield, OH 44406
                 </a></div>
-            </div>
+            
+            
+         
+            </ContactDiv>
                     
-            
-            </div>
-
-            
-            </ContactImage>
-             
+         
             
         )
     }
