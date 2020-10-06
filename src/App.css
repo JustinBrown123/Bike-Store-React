@@ -22,8 +22,6 @@ body{
   background-position: 0 -50px;
   /* background-position: 0 calc(1vw + 50px);; */
   width: 100%;
-  height: 95vh;
-  
   background-size:cover;
   
 }

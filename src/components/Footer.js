@@ -21,17 +21,12 @@ export default class Footer extends Component {
 
 const FooterWrapper = styled.div`
     color: white;
+    margin-top: 4vh;
     width: 100%;
     font-size: 10px;
-    position:absolute;
-    bottom:0;
-    
-    height:60px;   /* Height of the footer */
-    
     .logo{
         width: 80px;
     }
-    
     @media(max-width: 768px){
         color: black;
     }

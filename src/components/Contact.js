@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 
 const ContactDiv = styled.div `
-
+    height: 65vh;
+    .contact-wrapper{
     margin: 10vh auto auto auto;
     
     border-radius:10px;
@@ -12,9 +13,11 @@ const ContactDiv = styled.div `
 
     background-color: rgba(250,250,250, 0.7);
     width: calc(6vw + 200px);
+    }
     @media(max-width: 768px){
+        .contact-wrapper{
         width: calc(4vw + 200px);
-        background-color: rgba(0,0,250, 0.2);
+        background-color: rgba(0,0,250, 0.2);}
     }
 
 
@@ -49,6 +52,7 @@ export default class Contact extends Component {
         return (
             
             <ContactDiv>
+                <div className="contact-wrapper">
             
                     
                 
@@ -61,7 +65,7 @@ export default class Contact extends Component {
                 <div className="content-text"><a className="content-link" href="http://maps.google.com/?q= 6685 Kirk Rd, Canfield, OH 44406"target="_blank" rel="noopener noreferrer" >6685 Kirk Rd, Canfield, OH 44406
                 </a></div>
             
-            
+                </div>
          
             </ContactDiv>
                     
