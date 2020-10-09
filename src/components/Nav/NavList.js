@@ -6,8 +6,8 @@ export const NavList =[
         cName: 'nav-link'
     },
     {
-        title: 'News',
-        path: '/news',
+        title: 'Products',
+        path: '/brands',
         cName: 'nav-link'
     },
     {
@@ -20,7 +20,7 @@ export const NavList =[
         path: '/contact',
         cName: 'nav-link'
     }
-
+    
 ]
 
 

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {Switch, Route} from 'react-router-dom';
 import {Navbar} from './components/Nav/NavBar';
 import Contact from './components/Contact';
+import Brands from './components/Brands'
 import Home from './components/Home';
 import Trails from './components/Trails';
 import News from './components/News';
@@ -24,6 +25,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route path="/contact" component={Contact}></Route>
+        <Route path="/brands" component={Brands}></Route>
         <Route path="/news" component={News}></Route>
         <Route path="/wheretoride" component={Trails}></Route>
         <Route path="/data" component={Weather}></Route>
