@@ -15,8 +15,9 @@ const BrandContainer = styled.div`
 }
 .item{
     display:flex;
-
-align-content:center;
+    justify-content:center;
+    align-items:center;
+   
 
 
 }
