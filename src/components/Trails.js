@@ -2,21 +2,37 @@ import React, { Component } from 'react'
 import {StyledTextContainer} from './StyledTextContainer';
 import {localTrails} from '../trailData';
 import Weather from './Weather';
+import styled from 'styled-components'
+
+const TrailContainer = styled.div` 
+.top-section{
+    border-radius: 20px;
+    background-color: rgba(250, 250, 250, 0.7);
+    width: 60%;
+    margin: auto;
+
+}
+.trail-list-container{
+    margin-top: 5vh;
+}
+`
 
 class TrailList extends Component {
     render(){
         return(
+
             
             <React.Fragment>
-                <div className="text-center p-4">
+                <TrailContainer>
+                <div className="top-section text-center p-4">
                 
                 <Weather/>
                 
-                Maybe a club or something about downloading youngstowns favorite routes
-                <h4>GPX downloads/Strava etc</h4>
+                {/* Maybe a club or something about downloading youngstowns favorite routes
+                <h4>GPX downloads/Strava etc</h4> */}
                 </div>
 
-                <div className="text-center">
+                <div className="trail-list-container text-center">
                     {localTrails.map((trail, index)=>{
                         return (
                             <div key={index}>
@@ -31,6 +47,7 @@ class TrailList extends Component {
                         )
                 })}
                 </div>
+                </TrailContainer>
             </React.Fragment>
         )
 
@@ -38,3 +55,4 @@ class TrailList extends Component {
 }
 
 export default TrailList
+
