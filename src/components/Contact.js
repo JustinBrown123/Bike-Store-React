@@ -11,13 +11,13 @@ const ContactDiv = styled.div `
     text-align: center;
     padding: 3vw;
 
-    background-color: rgba(250,250,250, 0.7);
+    background-color: rgba(250,250,250, 0.8);
     width: calc(6vw + 200px);
     }
     @media(max-width: 768px){
         .contact-wrapper{
         width: calc(4vw + 200px);
-        background-color: rgba(0,0,250, 0.2);}
+       }
     }
 
 

@@ -11,8 +11,29 @@ export default class Home extends Component {
                 
                 <HomeDiv>
                 <div className="container">
+                    <div className="home-logo-container"><img src="../images/Trailside_Logo_Background.png" className='home-logo' alt='logo'/></div>
 
-                
+                    <div className="row pb-5">
+                        <div className="col-lg-8">
+                            <div className="home-image-col">
+                                <img src="../images/Trailside_Outside.jpg" alt=''className="home-image" />
+                            </div>
+                        </div>
+                        <div className="col-lg-4 time-col">
+                            <div className="time-container m-auto">
+                                <div className="article-title time-title">Hours of Operation</div>
+                                <ul className="hours-list article-text list-unstyled">
+                                    <li className="hours">Monday: 10-6</li>
+                                    <li>Tuesday: 10-6</li>
+                                    <li>Wednesday: Closed</li>
+                                    <li>Thursday: 10-6</li>
+                                    <li>Friday: 10-6</li>
+                                    <li>Saturday: 10-5</li>
+                                    <li>Sunday: 10-6</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 
 
 
@@ -46,13 +67,6 @@ export default class Home extends Component {
                    </div>
                 </div>
 
-                <div className="row">
-                    <div className="home-image">
-                        <img src="../images/Trailside_Outside.jpg" alt=''className="HomeImages" />
-                    </div>
-
-                    
-                </div>
                 <div className="article-signature">
                    <p><span className="signature-header"> Owner:</span><span className="article-title">Tim Knight</span></p>
                 </div>
@@ -70,6 +84,32 @@ const HomeDiv = styled.div`
     text-align: center;
     width: 70%;
     background: rgba(250, 250, 250, .7);
+    .home-logo{
+        padding-bottom: calc(2vw + 8px);
+        width: 20vw;
+        min-width: 130px;
+        max-width: 270px;
+    }
+    .time-col{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    }
+    .time-container{
+    width: 80%;
+
+    border:solid black 1px;
+    border-radius: 20px;
+    }
+    .time-title{
+        font-size: calc(.5vw + 7px);
+    }
+    .hours-list{
+        font-size: calc(.5vw + 5px);
+        
+    }
+
     .home-article{
         margin: auto;
         width:90%;
@@ -79,10 +119,18 @@ const HomeDiv = styled.div`
         text-align: center;
 
     }
+    .home-image-col{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+    }
     .home-image{
+        
         margin:auto;
         width: 100%;
-        margin-top: 3vw;
+        
+
     }
     .signature-header{
         font-size: calc(1vw + 10px)
@@ -92,12 +140,31 @@ const HomeDiv = styled.div`
         width: 340px;
         height: 400px;
     }
+    @media(max-width: 1050px){
+
+    .facebook-col{
+        margin-left: -15px;
+    }
+
+    }
+    @media(max-width: 990px){
+        .facebook-col{
+            margin-left: unset;
+        }
+        .home-image-col{
+        padding-bottom: 20px;
+    }
+
+    .time-container{
+    width: 50%;}
+    }
     @media(max-width: 768px){
 
         .facebook-col{
             margin-top: 15px;
         }
     }
+  
     @media(max-width: 560px){
         width: 98%;
         .facebook-content{
