@@ -6,8 +6,8 @@ import styled from "styled-components"
 const BrandContainer = styled.div`
 
 .brand-container-div{
-    border-radius: 20px;
-    background: rgba( 250, 250, 250, 0.8);
+    /* border-radius: 20px;
+    background: rgba( 250, 250, 250, 0.8); */
     width: 90%;
     margin: auto;
     height: auto;
@@ -81,7 +81,7 @@ export default class Brands extends Component {
         return (
             <BrandContainer>
            
-            <div className="brand-container-div">
+            <div className="brand-container-div article-background">
             <div className="brand-page-title article-title text-center">Brands We Carry</div>
                 <div className="brand-grid">
                 {brands.map((brand, index)=>{

@@ -36,7 +36,7 @@ const ContactDiv = styled.div `
         transition: all 0.2s ease;
     }
     .content-text:hover{
-        width: 90%;
+        
         margin: auto;
         font-weight: 500;
         transform: scale(1.25);

@@ -19,7 +19,8 @@ export const NavList =[
         title: 'Contact Us',
         path: '/contact',
         cName: 'nav-link'
-    }
+    },
+
     
 ]
 

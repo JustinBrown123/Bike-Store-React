@@ -9,7 +9,7 @@ export default class Home extends Component {
                 
 
                 
-                <HomeDiv>
+                <HomeDiv className="article-background">
                 <div className="container">
                     <div className="home-logo-container"><img src="../images/Trailside_Logo_Background.png" className='home-logo' alt='logo'/></div>
 
@@ -80,10 +80,10 @@ export default class Home extends Component {
 const HomeDiv = styled.div`
     margin: auto;
     padding: 2vw;
-    border-radius: 10px;
+
     text-align: center;
     width: 70%;
-    background: rgba(250, 250, 250, .7);
+
     .home-logo{
         padding-bottom: calc(2vw + 8px);
         width: 20vw;
