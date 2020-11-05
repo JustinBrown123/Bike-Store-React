@@ -2,14 +2,23 @@ import React, { Component } from 'react'
 import styled from "styled-components"
 
 const StyledWeather = styled.div`
-    font-size: calc(.5vw + 5px);
-    width: 90%;
+    font-size: calc(.5vw + 10px);
+    
+    width: 50%;
     margin: auto;
-    padding-bottom: 4vw;
+    padding: 1vw;
 
-    .temperature{
+    .weather-conditions{
+        align-self:center;
+        padding-right: 1vw;
+        
+    }
+    .icon-container{
         background: var(--lightColor);
-        border-radius: 50px;
+        height: auto;
+        border-radius: 50%;
+        
+        
     }
     .riding-condition{
     margin: auto;
@@ -87,15 +96,13 @@ export default class Weather extends Component {
         } else{
         return(
             <StyledWeather>
-                <div className='text-center row'> 
-                    <div className="riding-condition col">{timeToBike}</div>
-                    <div className="col-4">
-                        <div className="temperature">
-                            <div className=" article-text text-capitalize pt-3">It is {temp}℉ <br/> Currently:{weather}</div>
-                                <div><img className="weather-icon" src= {weatherImage} alt="icon"/></div> 
-                        </div>
-                    </div>
-                </div>
+                <div className="d-inline-flex">
+                <div className="weather-conditions ">
+                        Currently: {temp}℉</div> 
+                  <div className="icon-container "><img className="weather-icon" src= {weatherImage} alt="icon"/></div> 
+                  </div>
+                <div className="riding-condition">{timeToBike}</div>
+
             </StyledWeather>
         );
     }

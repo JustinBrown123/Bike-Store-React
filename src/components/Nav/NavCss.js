@@ -17,6 +17,7 @@ top:0;
 
 
 
+
 li{
     padding: 10px;
 }
@@ -27,11 +28,19 @@ li{
     color: var(--lightText);
     font-weight: 800;
     letter-spacing: 1px;
+
     text-transform: uppercase;
     position: relative;
-    padding: 3px 1vw;
+    padding: 3px 2vw;
     margin: 2px;
 }
+@media(max-width: 1000px){
+    .nav-link{
+        padding: 3px .5vw;
+        font-size: calc(1vw + 6px)
+    }
+}
+
 
 .nav-title{
   display: none;

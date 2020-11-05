@@ -43,11 +43,11 @@ export default class Home extends Component {
                             <div className="text-center article-title">
                         Here at Trailside Bicycle Company
                             </div>
-                        Here at TrailSide Bicycle we offer all the services for your bicycle needs. Come in and we can help you get cycling in no time, wether its bumming around the parks or getting ready for a bicycle tour across the country. We'll take care of you and get you back on the trail. 
-                        <br/>
-                        <br/>
-                        Marshall Walter "Major" Taylor (November 26, 1878 – June 21, 1932) was an American professional cyclist. He was born and raised in Indianapolis, where he worked in bicycle shops and began racing multiple distances in the track and road disciplines of cycling. As a teenager, he moved to Worcester, Massachusetts, with his trainer and had a successful amateur career, which included breaking track records.
-                        
+                            <div className="text-left">
+                                Trailside Bicycle Company of Youngstown is located at the Kirk road trailhead on the Millcreek metro parks bike way.
+                                <br/> We offer full service on any brand of bike and offer sales of new and used bikes.
+                                <br/>Trailside is open year around to service all the bikers walkers and runners on the trail. We have all your needs from cycling accessories and apparel to drinks, snacks and supplements. Stop in any time to check us out!!
+                            </div>
                         </div>
                     </div>
                     <div className="col-lg-6">

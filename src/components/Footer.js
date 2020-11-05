@@ -9,9 +9,13 @@ export default class Footer extends Component {
                 <div className="d-flex justify-content-center text-center ">
                     <Link to ='/contact'><img src="../images/Trailside_Logo_Background.png" className='logo' alt='logo'/></Link>
                 </div>
-                <div className="d-flex justify-content-center text-center ">
+                <div className="text-center footer-contact">
+                    <Link to ='/contact' style={{color: 'white', textDecoration:'none'}}><strong >Contact Us</strong></Link>
+                </div>
+                <div className="text-center pt-2">
                      Trailside Bicycle Company
-                </div> <div className="d-flex justify-content-center text-center ">
+                </div> 
+                <div className="text-center ">
                      Est. 2020
                 </div>    
             </FooterWrapper>
@@ -24,6 +28,12 @@ const FooterWrapper = styled.div`
     margin-top: 4vh;
     width: 100%;
     font-size: 10px;
+    .footer-contact{
+        font-size: 12px;
+        color: white !important;
+        text-decoration:none;
+
+    }
     .logo{
         width: 80px;
     }

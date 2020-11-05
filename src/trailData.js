@@ -2,9 +2,11 @@ export const localTrails = [
     {
         title:"Mill Creek Park",
         type:"Leisure / Road Biking",
-        img: "images/Mill_Creek_Park.jpg",
+        img: "images/MillCreekTrailWay.jpg",
         link: "https://www.millcreekmetroparks.org/visit/biking/",
-        info:"Lucas ipsum dolor sit amet skywalker jawa jawa mon endor hutt binks bothan hutt moff. Obi-wan anakin moff darth. Calamari skywalker chewbacca mara antilles kamino. Antilles ben jade moff grievous tatooine. Moff darth tusken raider organa jawa darth. Jar wicket kenobi baba obi-wan. Windu gonk antilles sidious utapau. Calrissian solo lando skywalker. Sebulba hoth mara alderaan gamorrean. Dantooine hutt binks biggs zabrak solo vader. Jabba lars k-3po utapau ponda sebulba. Jawa sidious mara skywalker Anakin hutt sebulba dantooine anakin organa darth darth. Lando dooku mara windu luke solo utapau chewbacca yavin. Mara skywalker vader jade organa gonk amidala boba. Mara calamari ackbar hutt organa wicket ben obi-wan moff. Anakin maul windu han antilles skywalker greedo c-3p0. Wicket coruscant wicket tatooine moff sith mandalorians. Obi-wan antilles c-3po dantooine hutt moff. Obi-wan qui-gonn biggs thrawn obi-wan kessel hutt biggs mandalorians. Calrissian ahsoka lando ben coruscant bothan skywalker."
+        info:"This 11-mile paved trail offers a variety of scenery and experiences for hikers, skaters, and bicyclists. The trail has been warmly embraced by the community and used by the young and the young at heart.",
+        address: "https://maps.google.com/?q= 41.068974, -80.788235",
+        facebook: "https://www.facebook.com/millcreekmetroparks"
 
     },
     {
@@ -12,6 +14,21 @@ export const localTrails = [
         type:"Mountain Biking / SingleTrack",
         img: "images/Lake_Milton_Single_Track.jpg",
         link: "https://www.mtbproject.com/trail/7027523/lake-milton-trail",
-        info:"Croke xanatos shmi desann mantell. Glymphid cody jax orus togorian ord. Billaba felucia jerec h'nemthean. Jerjerrod yuzzem amidala joh ewok piell billaba leia shaak. Cordé yavin bria mandell lars. Senex lytton darth iktotchi wilhuff zannah geonosis saurin dressellian. Olié jabba nute qui-gon golda kit evocii bespin. Stele habassa senex mara. Yoda chirrpa kwi chistori jubnuk. Ansuroer naberrie evocii lars sio whiphid. K-3po sullustan yuzzem zann reach qui-gonn chewbacca joelle durge. Asajj thennqora yaddle ors ferroans ewok firrerreo jar solo.Mustafar yaka utapaun keyan sikan wyl organa bren jamillia. Maul gen'dai pavan antilles. Skywalker habassa padmé antonio whaladon obi-wan qel-droma. Kenobi qrygg moor derek orus darth. Iktotchi gonk devaronian san iridonian kit mace rahn. Tib h'nemthean calamari secura besalisk kal trioculus. Watto axmis zekk nass mara. Gamorr darth yoda adi. Talz aka zorba solo beru. Geonosis antonio plo allie brak omwati. Celegian lars mustafar gossam stereb nien derlin. Moddell wesell ubese kel tierce dodonna miraluka nilgaard."
+        info:"Family Friendly Mountain Bike Trail, however, it does have tight turns with trees and short, punchy climbs and descents. No extended climbing. The trail is a fun and exciting ride and worth checking out.",
+        address: "https://maps.google.com/?q= 16525 Ellsworth Rd, Berlin Center, OH 44401",
+        facebook: "https://www.facebook.com/rustbeltrevivaltrailcoalition"
+
+    },
+    {
+        title:"West Branch",
+        type:"Mountain Biking / SingleTrack",
+        img: "images/Lake_Milton_Single_Track.jpg",
+        link: "https://www.mtbproject.com/trail/4005069/west-branch-state-park-full-tour",
+        info:" West Branch State Park is the land surrounding West Branch Reservoir in Ravenna, OH. It has been hand built by CAMBA volunteers over many years. The result is a fun and varied selection of trails. There are nice lake views and smooth singletrack on the Lakeside Trail.",
+        address: "https://maps.google.com/?q= 6940 Cable Line Rd, Ravenna, OH 44266",
+        facebook: "https://www.facebook.com/mtbcleveland"
+
     }
+
 ]
+

@@ -11,15 +11,21 @@ export const NavList =[
         cName: 'nav-link'
     },
     {
-        title: 'Lets Ride',
-        path: '/wheretoride',
+        title: 'Services',
+        path: '/services',
         cName: 'nav-link'
     },
     {
-        title: 'Contact Us',
-        path: '/contact',
+        title: 'Lets Ride',
+        path: '/wheretoride',
         cName: 'nav-link'
-    },
+    }
+    // },
+    // {
+    //     title: 'Contact Us',
+    //     path: '/contact',
+    //     cName: 'nav-link'
+    // },
 
     
 ]
