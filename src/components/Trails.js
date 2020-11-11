@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {localTrails} from '../trailData';
-import Weather from './Weather';
+// import Weather from './Weather';
 import styled from 'styled-components'
 import {ridingResources}  from '../groupresources'
 
@@ -12,15 +12,15 @@ const TrailContainer = styled.div`
 .weather-container{
     height: 400px;
     min-width: 250px;
-    width: 50%;
-    max-height: 25vh;
+    width: 25vw;
+    max-height: 15vh;
   
 }
 .picture-container
 {
     
     min-width: 250px;
-    width: 100%;
+    width: 50%;
     max-height: 25vh;
     margin: auto;
 }
@@ -75,6 +75,11 @@ const TrailContainer = styled.div`
     text-align: left;
     
 }
+@media (max-width: 767px){
+    .trail-info{
+        display: none;
+    }
+}
 a{
     color: black;
     text-decoration:none;
@@ -127,7 +132,7 @@ class TrailList extends Component {
         return(      
             <React.Fragment>
                 <TrailContainer>
-                <div className="top-container">
+                {/* <div className="top-container">
                     <div className="d-inline-flex">
                         <div className="picture-container article-background ">
                             <img src="./images/Trailside_1.jpg" className="fun-pic" alt="riding-bike"/>
@@ -136,7 +141,7 @@ class TrailList extends Component {
                         <Weather/>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="trail-list-container text-center">
                     {localTrails.map((trail, index)=>{
@@ -159,8 +164,8 @@ class TrailList extends Component {
                 })}
                 </div>
 
-                <div className="resources d-flex article-background">
-                    <div className="resource-list">
+                <div className="resources row article-background ">
+                    <div className="p-2 resource-list col-sm-2">
                         <ul>
                             <li><strong>Local Resources</strong></li>
                     {ridingResources.map((resource, index)=>{
@@ -174,7 +179,7 @@ class TrailList extends Component {
                     })}
                     </ul>
                     </div>
-                    <div className="resource-list">
+                    <div className="p-2 resource-list col-sm-2">
                         <ul>
                             <li><strong>Other Resources</strong></li>
                             <li><a href="https://www.mtbproject.com/" target="_blank" rel="noopener noreferrer">MTB Project</a></li>

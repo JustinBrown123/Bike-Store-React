@@ -22,7 +22,7 @@ export const localTrails = [
     {
         title:"West Branch",
         type:"Mountain Biking / SingleTrack",
-        img: "images/Lake_Milton_Single_Track.jpg",
+        img: "images/westbranchmtb.jpg",
         link: "https://www.mtbproject.com/trail/4005069/west-branch-state-park-full-tour",
         info:" West Branch State Park is the land surrounding West Branch Reservoir in Ravenna, OH. It has been hand built by CAMBA volunteers over many years. The result is a fun and varied selection of trails. There are nice lake views and smooth singletrack on the Lakeside Trail.",
         address: "https://maps.google.com/?q= 6940 Cable Line Rd, Ravenna, OH 44266",

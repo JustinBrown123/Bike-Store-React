@@ -16,7 +16,7 @@ const StyledWeather = styled.div`
     .icon-container{
         background: var(--lightColor);
         height: auto;
-        border-radius: 50%;
+        border-radius: 20%;
         
         
     }
@@ -101,7 +101,7 @@ export default class Weather extends Component {
                         Currently: {temp}℉</div> 
                   <div className="icon-container "><img className="weather-icon" src= {weatherImage} alt="icon"/></div> 
                   </div>
-                <div className="riding-condition">{timeToBike}</div>
+                <div className="riding-condition">{timeToBike}</div> 
 
             </StyledWeather>
         );
