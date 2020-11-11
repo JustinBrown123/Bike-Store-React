@@ -37,7 +37,13 @@ li{
 @media(max-width: 1000px){
     .nav-link{
         padding: 3px .5vw;
-        font-size: calc(1vw + 6px)
+        
+    }
+}
+@media (max-width: 820px){
+    .nav-link{
+        font-size: calc(1vw + 6px);
+        padding: 6px .5vw;
     }
 }
 
