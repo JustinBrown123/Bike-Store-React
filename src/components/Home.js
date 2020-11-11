@@ -43,10 +43,10 @@ export default class Home extends Component {
                             <div className="text-center article-title">
                         Here at Trailside Bicycle Company
                             </div>
-                            <div className="text-left">
+                            <div className="text-center">
                                 Trailside Bicycle Company of Youngstown is located at the Kirk road trailhead on the Millcreek metro parks bike way.
                                 <br/> We offer full service on any brand of bike and offer sales of new and used bikes.
-                                <br/>Trailside is open year around to service all the bikers walkers and runners on the trail. We have all your needs from cycling accessories and apparel to drinks, snacks and supplements. Stop in any time to check us out!!
+                                <br/>Trailside is open year around to service all the bikers, walkers and runners on the trail. We have all your needs from cycling accessories and apparel to drinks, snacks and supplements. Stop in any time to check us out!!
                             </div>
                         </div>
                     </div>
@@ -103,10 +103,10 @@ const HomeDiv = styled.div`
     border-radius: 20px;
     }
     .time-title{
-        font-size: calc(.5vw + 7px);
+        font-size: calc(.5vw + 8px);
     }
     .hours-list{
-        font-size: calc(.5vw + 5px);
+        font-size: calc(.5vw + 10px);
         
     }
 
