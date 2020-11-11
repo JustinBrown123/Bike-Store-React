@@ -13,6 +13,7 @@ const BrandContainer = styled.div`
     height: auto;
     font-weight: 800;
 }
+
 .item{
     display:flex;
     justify-content:center;
