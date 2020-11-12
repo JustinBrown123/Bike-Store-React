@@ -126,7 +126,7 @@ export default class Services extends Component {
         return (
             <ServiceContainer className="container"> 
                 <div className="row">
-                    <div className="col-lg-6 pb-3 ">
+                    <div className="col-lg-6 pb-3">
                         <div className="service-section chalkboard article-background">
                             
                             <div className="service-info"> 
