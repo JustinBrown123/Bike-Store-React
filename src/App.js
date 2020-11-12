@@ -31,7 +31,7 @@ function App() {
         <Route path="/wheretoride" component={Trails}></Route>
         <Route path="/data" component={Weather}></Route>
         <Route path="/services" component={Services}></Route>
-        <Route component={Default}></Route>
+        <Route component={Default}/>
       </Switch>
 
       <Footer/>
