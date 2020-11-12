@@ -5,6 +5,11 @@ export const brands = [
         title: "Detroit Bikes"
     },
     {
+        img: './images/Airborne.png',
+        link: 'https://airbornebicycles.com/',
+        title: "Airborne Bicycles"
+    },
+    {
         img: "./images/KHS-logo.png",
         link: "https://khsbicycles.com/",
         title: "KHS Bikes" 
