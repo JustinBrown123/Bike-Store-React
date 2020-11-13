@@ -12,14 +12,14 @@ import Default from './components/Default'
 import Footer from './components/Footer'
 import Weather from './components/Weather'
 import Services from './components/Services'
-import ReactGa from 'react-ga'
+import ReactGA from 'react-ga';
 
 
 
 function App() {
   useEffect(() => {
-    ReactGa.initialize(process.env.REACT_APP_GOOGLE_ID)
-    ReactGa.pageview(window.location.pathname + window.location.search)
+    ReactGA.initialize('G-F2MKGS8YLE');
+    ReactGA.pageview(window.location.pathname + window.location.search)
   },[])
   
   return (
