@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Switch, Route} from 'react-router-dom';
@@ -12,15 +12,11 @@ import Default from './components/Default'
 import Footer from './components/Footer'
 import Weather from './components/Weather'
 import Services from './components/Services'
-import ReactGA from 'react-ga';
+
 
 
 
 function App() {
-  useEffect(() => {
-    ReactGA.initialize('G-F2MKGS8YLE');
-    ReactGA.pageview(window.location.pathname + window.location.search)
-  },[])
   
   return (
     <React.Fragment>
