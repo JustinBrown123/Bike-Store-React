@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Switch, Route} from 'react-router-dom';
@@ -12,8 +12,16 @@ import Default from './components/Default'
 import Footer from './components/Footer'
 import Weather from './components/Weather'
 import Services from './components/Services'
+import ReactGa from 'react-ga'
+
+
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize(process.env.REACT_APP_GOOGLE_ID)
+    ReactGa.pageview(window.location.pathname + window.location.search)
+  },[])
+  
   return (
     <React.Fragment>
       <Navbar />
