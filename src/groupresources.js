@@ -10,17 +10,15 @@ export const ridingResources = [
 
     },
     {
+        name: "Crew Racing and Rehab",
+        link: "https://www.crewracing.org/"
+    },
+    {
         name: "Rustbelt Trail Revival Trail Coalition",
         link: "https://www.facebook.com/rustbeltrevivaltrailcoalition"
-    },
-    {
-        name: "Crew Racing and Rehab",
-        link: "https://wwww.crewracing.org"
-    },
-    {
-        name: "Ohio Gravel Grinders",
-        link: "https://www.ohiogravelgrinders.com/"
     }
+
+
 
 ]
 

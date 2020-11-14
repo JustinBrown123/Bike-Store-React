@@ -6,7 +6,7 @@ export const NavList =[
         cName: 'nav-link'
     },
     {
-        title: 'Products',
+        title: 'Partners',
         path: '/brands',
         cName: 'nav-link'
     },

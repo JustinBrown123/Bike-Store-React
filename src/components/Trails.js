@@ -143,6 +143,7 @@ class TrailList extends Component {
                     </div>
                 </div> */}
 
+
                 <div className="trail-list-container text-center">
                     {localTrails.map((trail, index)=>{
                         return (
@@ -163,11 +164,10 @@ class TrailList extends Component {
                         )
                 })}
                 </div>
-
                 <div className="resources row article-background ">
-                    <div className="p-2 resource-list col-sm-2">
+                    <div className="p-2 resource-list">
                         <ul>
-                            <li><strong>Local Resources</strong></li>
+                            <li className="text-title"><strong>Local Resources</strong></li>
                     {ridingResources.map((resource, index)=>{
                         return (
                             <div key={index}>
@@ -179,9 +179,12 @@ class TrailList extends Component {
                     })}
                     </ul>
                     </div>
+                </div>
+                <div className="resources row article-background ">
                     <div className="p-2 resource-list col-sm-2">
                         <ul>
                             <li><strong>Other Resources</strong></li>
+                            <li><a href="https://www.ohiogravelgrinders.com/" target="_blank" rel="noopener noreferrer">Ohio Gravel Grinders</a></li>
                             <li><a href="https://www.mtbproject.com/" target="_blank" rel="noopener noreferrer">MTB Project</a></li>
                             <li><a href="https://www.sheldonbrown.com/" target="_blank" rel="noopener noreferrer">Sheldon Brown</a></li>
                             <li><a href="https://ridewithgps.com/" target="_blank" rel="noopener noreferrer">Ride With GPS</a></li>
