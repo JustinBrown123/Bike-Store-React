@@ -14,9 +14,7 @@ margin: auto;
         margin: auto;
         height: 40vw;
         min-width:250px;
-        
-        
-        
+   
     }
 
 

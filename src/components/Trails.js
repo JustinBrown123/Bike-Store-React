@@ -112,8 +112,9 @@ ul{
     cursor:pointer;
 }
 .resources{
-    width: 75%;
+    width: 40%;
     margin: 3.5vw auto auto auto;
+    min-width: 300px;
 }
 
 .resource-list{
@@ -122,6 +123,49 @@ ul{
     min-width: 220px;
     text-align:center;
    
+}
+.resource-title{
+    font-weight:600;
+    font-size: calc(20px + .5vw);
+    margin: auto;
+    padding-bottom: .7vw;
+}
+.local-resource{
+    margin: auto;
+    width: 50%;
+    
+
+}
+.resource-link{
+    font-size: calc(.5vw + 13px);
+    font-weight: 400;
+    width: 70%;
+    margin: auto;
+    text-align:center;
+}
+@media (max-width: 767px){
+    .resource-link{
+        font-size: calc(.5vw + 10px);
+        width: 100%;
+    }
+    .resource-title{
+    
+    font-size: calc(16px + .5vw);
+  
+}
+}
+.resource-link:hover{
+    transform: scale(1.25);
+    background-color: var(--lightColor);
+    border-radius: 20px;
+}
+@media (max-width: 580px){
+    .resource-line{
+        background-color: black;
+        height: 1px;
+        width: 50%;
+        margin: auto auto 2px auto;
+    }
 }
 
 
@@ -142,6 +186,26 @@ class TrailList extends Component {
                         </div>
                     </div>
                 </div> */}
+                 <div className="trail-list-container">
+                     <div className="trail-container article-background">                      
+                       
+                        
+                        <div className="local-resource">
+                        <div className="resource-title text-center">Local Resources</div>
+                            {ridingResources.map((resource, index)=>{
+                                return (
+                                    <div key={index}>
+                                        
+                                        <div className="resource-link"><a href={resource.link} className="p-1" target="_blank" rel="noopener noreferrer">{resource.name}</a></div>
+                                        {/* <div className="resource-line"></div> */}
+                                    </div>    
+                                )
+                            })}
+                        </div>
+                        <img className="trail-image" alt="ohio" src="/images/OhioBicycle.png"/>
+                    
+                    </div>
+                </div>
 
 
                 <div className="trail-list-container text-center">
@@ -164,30 +228,15 @@ class TrailList extends Component {
                         )
                 })}
                 </div>
-                <div className="resources row article-background ">
+               
+                <div className="resources article-background ">
                     <div className="p-2 resource-list">
                         <ul>
-                            <li className="text-title"><strong>Local Resources</strong></li>
-                    {ridingResources.map((resource, index)=>{
-                        return (
-                            <div key={index}>
-                                <div className="resourc-link">
-                                   <li><a href={resource.link} target="_blank" rel="noopener noreferrer">{resource.name}</a></li>
-                                </div>
-                            </div>    
-                        )
-                    })}
-                    </ul>
-                    </div>
-                </div>
-                <div className="resources row article-background ">
-                    <div className="p-2 resource-list col-sm-2">
-                        <ul>
-                            <li><strong>Other Resources</strong></li>
-                            <li><a href="https://www.ohiogravelgrinders.com/" target="_blank" rel="noopener noreferrer">Ohio Gravel Grinders</a></li>
-                            <li><a href="https://www.mtbproject.com/" target="_blank" rel="noopener noreferrer">MTB Project</a></li>
-                            <li><a href="https://www.sheldonbrown.com/" target="_blank" rel="noopener noreferrer">Sheldon Brown</a></li>
-                            <li><a href="https://ridewithgps.com/" target="_blank" rel="noopener noreferrer">Ride With GPS</a></li>
+                            <li className="resource-title">Other Resources</li>
+                            <li><a className="resource-link" href="https://www.ohiogravelgrinders.com/" target="_blank" rel="noopener noreferrer">Ohio Gravel Grinders</a></li>
+                            <li><a className="resource-link" href="https://www.mtbproject.com/" target="_blank" rel="noopener noreferrer">MTB Project</a></li>
+                            <li><a className="resource-link" href="https://www.sheldonbrown.com/" target="_blank" rel="noopener noreferrer">Sheldon Brown</a></li>
+                            <li><a className="resource-link" href="https://ridewithgps.com/" target="_blank" rel="noopener noreferrer">Ride With GPS</a></li>
                         </ul>
                     </div>
                 </div>

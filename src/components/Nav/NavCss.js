@@ -7,8 +7,7 @@ height: calc(1vw + 50px);
 list-style:none;
 display: flex;
 flex-flow: row nowrap;
-/* background-color: var(--darkColor); */
- background-image: url('../images/binding_dark/binding_dark.png'); 
+background-image: url('../images/binding_dark/binding_dark.png'); 
 justify-content:center;
 margin-bottom: 0;
 position:fixed;
@@ -16,11 +15,10 @@ width: 100%;
 top:0;
 
 
-
-
 li{
     padding: 10px;
 }
+
 
 .nav-link{
     text-decoration:none;
@@ -34,10 +32,9 @@ li{
     padding: 3px 2vw;
     margin: 2px;
 }
-@media(max-width: 1000px){
+@media(max-width: 1080px){
     .nav-link{
-        padding: 3px .5vw;
-        
+        padding: 5px .7vw;       
     }
 }
 @media (max-width: 820px){

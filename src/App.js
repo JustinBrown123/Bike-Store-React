@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import Brands from './components/Brands'
 import Home from './components/Home';
 import Trails from './components/Trails';
-import News from './components/News';
+import Partners from './components/Partners';
 import Default from './components/Default'
 import Footer from './components/Footer'
 import Weather from './components/Weather'
@@ -31,7 +31,7 @@ function App() {
         <Route exact path="/" component={Home}></Route>
         <Route path="/contact" component={Contact}></Route>
         <Route path="/brands" component={Brands}></Route>
-        <Route path="/news" component={News}></Route>
+        <Route path="/partners" component={Partners}></Route>
         <Route path="/wheretoride" component={Trails}></Route>
         <Route path="/data" component={Weather}></Route>
         <Route path="/services" component={Services}></Route>

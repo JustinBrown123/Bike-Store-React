@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import {brands} from "../brandData"
+
 import styled from "styled-components"
 
 
-const BrandContainer = styled.div`
+const PartnerContainer = styled.div`
 
 .brand-container-div{
     /* border-radius: 20px;
@@ -18,6 +18,8 @@ const BrandContainer = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
+   
+
 
 }
 .brand-grid{
@@ -75,14 +77,16 @@ const BrandContainer = styled.div`
 }
 `
 
-export default class Brands extends Component {
+export default class Partners extends Component {
     render() {
         return (
-            <BrandContainer>
+            <PartnerContainer>
            
             <div className="brand-container-div article-background">
-            <div className="brand-page-title article-title text-center">Brands We Carry</div>
-                <div className="brand-grid">
+            <div className="brand-page-title article-title text-center">Our Partners</div>
+
+            <h1>UNDER CONSTRUCTION</h1>
+                {/* <div className="brand-grid">
                 {brands.map((brand, index)=>{
                     return(
                     <div className="item" key={index}>
@@ -90,11 +94,11 @@ export default class Brands extends Component {
                     </div>
                     )
                 })}
-                </div>
+                </div> */}
                 
                 
             </div>
-            </BrandContainer>
+            </PartnerContainer>
         )
     }
 }

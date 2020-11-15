@@ -9,10 +9,14 @@ const ColorLogo = styled.div`
     left: 30px;
 
     .navbar-img{
-        min-width: 80px;
-        width: 130px;
-       
+        min-width: 70px;
+        width: calc(5vw + 40px);
+        max-width: 130px;
         display: block;
+    }
+    @media (max-width: 1205px){
+        top: .5vw;
+        left: calc(.5vw + 5px);
     }
     @media(max-width: 768px){
         width: 100%;
@@ -35,7 +39,7 @@ const ColorLogo = styled.div`
 const MainLogo = ()=> {
     return (
         <ColorLogo>
-            <Link to ='/contact'><img src="../images/Trailside_Logo_Background.png" alt="Contact-us" className="navbar-img"/></Link>
+            <Link to ='/'><img src="../images/Trailside_Logo_Background.png" alt="Contact-us" className="navbar-img"/></Link>
         </ColorLogo>
     )
 }

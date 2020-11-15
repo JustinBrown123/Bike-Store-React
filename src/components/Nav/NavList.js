@@ -7,6 +7,11 @@ export const NavList =[
     },
     {
         title: 'Partners',
+        path: '/partners',
+        cName: 'nav-link'
+    },
+    {
+        title: 'Brands',
         path: '/brands',
         cName: 'nav-link'
     },
@@ -20,12 +25,7 @@ export const NavList =[
         path: '/wheretoride',
         cName: 'nav-link'
     }
-    // },
-    // {
-    //     title: 'Contact Us',
-    //     path: '/contact',
-    //     cName: 'nav-link'
-    // },
+
 
     
 ]

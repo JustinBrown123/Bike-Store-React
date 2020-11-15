@@ -76,3 +76,6 @@ body{
 
 }
 
+.social:hover{
+  transform:scale(1.25);
+}

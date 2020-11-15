@@ -49,9 +49,11 @@ export const Navbar = () => {
                 </div>
             <NavWrapper>
                 <NavCss open={open} onClick={showNavbar}>
+                    
 
                 <li><img src="../images/Trailside_Logo_Background.png" alt="Home" className="nav-title"/></li>
-                <li className="breaker-line"></li>        
+                <li className="breaker-line"></li>  
+                    
                     {NavList.map((item, index) => {
                         return(
                             <li key={index} className="nav-item text-title">
@@ -59,6 +61,8 @@ export const Navbar = () => {
                             </li>
                         )
                     })}
+                    
+                    
                 </NavCss>
             </NavWrapper>
             </>
