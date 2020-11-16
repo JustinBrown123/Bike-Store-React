@@ -1,91 +1,82 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {partners} from '../partnersData';
 
 import styled from "styled-components"
 
 
 const PartnerContainer = styled.div`
 
-.brand-container-div{
-    /* border-radius: 20px;
-    background: rgba( 250, 250, 250, 0.8); */
-    width: 90%;
+
+.page-header{
+    color: var(--lightColor);
+
+}
+.partner-container{
+   width: 98%;
     margin: auto;
-    height: auto;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    align-content: center;
+}
+.partner{
+    height: calc(5vw + 360px);  
+    width: calc(12vw + 230px);
+    padding: 10px;
+    align-self:center;
+    justify-self:center;
+}
+.partner-logo{
+    display: block;
+    margin: auto;
+    width: 80%;
+    
+}
+@media (max-width: 768px){
+    .page-header{
+    color: var(--darkColor);
     font-weight: 800;
-}
-
-.item{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-   
-
 
 }
-.brand-grid{
-    padding: 5px;
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1px;
-    justify-items: center;
-    align-items: center;
 }
-.brand-page-title{
-    width: 100%;
-    padding: 2.5vw 0 5vw 0;
-  
-    font-size: calc(1vw + 18px);
-
-}
-.brand-size{
-    margin:auto;
-    padding: 5px;
-    max-width:200px;
-    max-height: 150px;
-    cursor: pointer;
-    
-}
-@media( min-width: 1200px){
-    .brand-grid{
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+@media (max-width: 550px){
+    .partner{
+        height: 360px;
     }
-    .brand-size{ 
-    max-width:350px;
-    max-height: 200px;
-    
-}
-}
-@media( max-width: 501px){
-    .brand-grid{
-
-
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-gap: 5px;
+    .partner-container{
+        width: 100%;
+        grid-template-columns: unset;
+        grid-template-rows: repeat(auto-fill, minmax(360px, 1fr));
     }
-    .item{
-        height: 100px;
-        width: 150px;
-    }
-    .brand-size{ 
-    max-width:140px;
-   
-    max-height: 100px;
-    
 }
-}
+
 `
 
 export default class Partners extends Component {
     render() {
         return (
             <PartnerContainer>
-           
-            <div className="brand-container-div article-background">
-            <div className="brand-page-title article-title text-center">Our Partners</div>
+                            <h1 className="text-center text-danger">Under CONSTRUCTION</h1>
+                            <div className="page-header article-title pb-4 text-center">Our Partners</div>
+                                <div className="partner-container">
+                                {partners.map((partner, index)=>{
+                                return (
+                                    <div className="article-background partner">
+                                    <div key={index}>
+                                        <img className="partner-logo" src={partner.logo} alt="partner logo"/>
+                                        <div className=""><a href={partner.link} className="p-1" target="_blank" rel="noopener noreferrer">{partner.name}</a></div>
+                                        <p>{partner.text}</p>
+                                        {/* <div className="resource-line"></div> */}
+                                    </div>   
+                                    </div> 
+                                )
+                            })}
+                            </div>
+                            
+            
 
-            <h1>UNDER CONSTRUCTION</h1>
+
+          
                 {/* <div className="brand-grid">
                 {brands.map((brand, index)=>{
                     return(
@@ -97,7 +88,7 @@ export default class Partners extends Component {
                 </div> */}
                 
                 
-            </div>
+       
             </PartnerContainer>
         )
     }
