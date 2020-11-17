@@ -79,6 +79,9 @@ li{
     justify-content: unset;
     align-items: center;
     border-radius: 20% 0 0 60%;
+    .nav-link{
+        padding:0;
+    }
     
     li{
         color: var(--lightText);
