@@ -2,16 +2,16 @@ export const partners = [
 
     {
         name: "CycWard Bike Club",
-        logo: "<unavailable>",
+        logo: "images/Cycward.png",
         link: "https://www.facebook.com/groups/2391868074230503", 
-        text: "Lucas ipsum dolor sit amet rex zekk tierce saesee fett terrik wedge frozian cb-99 paploo. Kota jek anzati charal jusik dodonna organa zann. Hoojib oswaft ventress unu quelli moff baba rex. Cody shmi tatooine hoth. Biggs tibor gordin bibble. Yoda muunilinst draethos wirutid quinlan cognus greedo skywalker."
+        text: "Whether you are crazy about cycling or the only thing that keeps you from going insane sometimes is being on your bicycle.... you belong in the CycWard!"
 
     },
     {
         name: "Crew Racing and Rehab",
-        logo: "<Unavailable>",
+        logo: "images/CrewRacing.png",
         link: "https://www.crewracing.org/",
-        text: "Lucas ipsum dolor sit amet fett mara sebulba c-3p0 darth kenobi mara amidala anakin coruscant. Padmé vader fett antilles hoth darth hutt solo ventress. Grievous ackbar tatooine kit maul mustafar binks fett. Bespin zabrak lars kessel bothan. Luuke boba gonk tatooine. C-3po grievous yavin organa dooku padmé skywalker."
+        text: "Working as a coach and a physical therapist, I wanted to combine human performance with rehabilitation to develop athletes who can achieve excellence in sport and balance in life."
         
     },
     {
