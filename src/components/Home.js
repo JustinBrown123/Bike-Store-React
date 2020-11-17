@@ -13,11 +13,13 @@ export default class Home extends Component {
                 <div className="container">
                     <div className="home-logo-container"><img src="../images/Trailside_Logo_Background.png" className='home-logo' alt='logo'/></div>
 
-                    <div className="row pb-5">
+                    <div className="row pb-3">
                         <div className="col-lg-8">
                             <div className="home-image-col">
                                 <img src="../images/Trailside_Outside.jpg" alt=''className="home-image" />
-                            </div>
+                                <div className="address-link" >
+                                <a className="address" href="http://maps.google.com/?q= 6685 Kirk Rd, Canfield, OH 44406"target="_blank" rel="noopener noreferrer" >6685 Kirk Rd, Canfield, OH 44406 </a><span> | </span><span><a className="address" href="tel:(330)-503-4690"> (330) 503-4690</a></span>
+                            </div> </div>
                         </div>
                         <div className="col-lg-4 time-col">
                             <div className="time-container m-auto">
@@ -30,8 +32,12 @@ export default class Home extends Component {
                                     <li>Friday: 10-6</li>
                                     <li>Saturday: 10-5</li>
                                     <li>Sunday: 10-6</li>
+                                    <li></li>
+                                   
                                 </ul>
+                                
                             </div>
+  
                         </div>
                     </div>
                 
@@ -83,7 +89,17 @@ const HomeDiv = styled.div`
 
     text-align: center;
     width: 70%;
-
+    
+    .address{
+        
+        color: black;
+    }
+    .address-link{
+        text-align: center;
+        
+        width: 100%;
+        font-size: 12px;
+    }
     .home-logo{
         padding-bottom: calc(2vw + 8px);
         width: 20vw;
@@ -120,9 +136,9 @@ const HomeDiv = styled.div`
 
     }
     .home-image-col{
-        display:flex;
-        justify-content:center;
-        align-items:center;
+        display:block;
+        /* justify-content:center;
+        align-items:center; */
 
     }
     .home-image{
