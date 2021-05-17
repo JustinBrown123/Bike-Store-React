@@ -27,11 +27,11 @@ export default class Home extends Component {
                                 <ul className="hours-list article-text list-unstyled">
                                     <li className="hours">Monday: 10-6</li>
                                     <li>Tuesday: 10-6</li>
-                                    <li>Wednesday: Closed</li>
+                                    <li>Wednesday: 10-6</li>
                                     <li>Thursday: 10-6</li>
                                     <li>Friday: 10-6</li>
                                     <li>Saturday: 10-5</li>
-                                    <li>Sunday: 10-6</li>
+                                    <li>Sunday: 12-6</li>
                                     <li></li>
                                    
                                 </ul>
